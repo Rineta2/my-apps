@@ -57,18 +57,22 @@ const styles = StyleSheet.create({
 
   //======== Signin ========//
   containerSignin: {
+    flex: 1,
     padding: 25,
+    backgroundColor: "#fff",
   },
 
   loginImage: {
     display: "flex",
     alignItems: "center",
-    marginBottom: 5,
+    marginBottom: 20,
   },
 
   textHeader: {
-    fontSize: 30,
-    fontWeight: "bold",
+    fontSize: 32,
+    fontWeight: "800",
+    color: "#1a1a1a",
+    marginBottom: 8,
   },
 
   formContainerLogin: {
@@ -101,6 +105,26 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
 
+  buttonGoogle: {
+    backgroundColor: Colors.PRIMARY,
+    padding: 15,
+    borderRadius: 10,
+    marginTop: 10,
+  },
+
+  googleButtonContent: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 10,
+  },
+
+  textGoogle: {
+    color: "white",
+    fontSize: 16,
+    fontWeight: "600",
+  },
+
   textLogin: {
     color: "white",
     textAlign: "center",
@@ -126,26 +150,81 @@ const styles = StyleSheet.create({
   //======== Signup ========//
 
   formContainerRegister: {
-    marginTop: 15,
-    display: "flex",
-    flexDirection: "column",
-    gap: 5,
+    marginTop: 20,
+  },
+
+  inputLabel: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#404040",
+    marginBottom: 8,
+  },
+
+  textInputRegister: {
+    fontSize: 16,
+    padding: 15,
+    backgroundColor: "#f5f5f5",
+    borderRadius: 12,
+    color: "#1a1a1a",
+  },
+
+  passwordContainerRegister: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "white",
+    borderRadius: 12,
+    paddingHorizontal: 15,
+    borderWidth: 1,
+    borderColor: "#1a1a1a",
+  },
+
+  passwordInputRegister: {
+    flex: 1,
+    fontSize: 16,
+    padding: 15,
+    color: "#1a1a1a",
+  },
+
+  eyeIcon: {
+    padding: 10,
   },
 
   buttonRegister: {
     backgroundColor: Colors.PRIMARY,
-    padding: 15,
-    borderRadius: 10,
-    marginTop: 25,
+    padding: 18,
+    borderRadius: 12,
+    marginTop: 30,
+    shadowColor: Colors.PRIMARY,
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    elevation: 5,
   },
 
   buttonToLogin: {
-    backgroundColor: "white",
-    padding: 15,
-    borderRadius: 10,
+    backgroundColor: "transparent",
+    padding: 18,
+    borderRadius: 12,
     marginTop: 15,
-    borderWidth: 1,
+    borderWidth: 2,
     borderColor: Colors.PRIMARY,
+  },
+
+  textLoginRegister: {
+    color: "white",
+    textAlign: "center",
+    fontSize: 16,
+    fontWeight: "700",
+  },
+
+  textToRegisterRegister: {
+    color: Colors.PRIMARY,
+    textAlign: "center",
+    fontSize: 16,
+    fontWeight: "600",
   },
 });
 
